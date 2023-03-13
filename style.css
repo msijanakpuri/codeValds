@@ -217,6 +217,11 @@
   height: 200px;
   width: 200px;
 }
+#hero .nav .logde {
+  
+  font-family: var(--font2);
+  font-size: x-small;
+}
 
 @media only screen and (min-width: 768px) {
   #hero {
