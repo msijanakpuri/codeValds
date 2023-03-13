@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Primary: #00FFF2;
+  --second: #000914;
+  --font1: "poppins";
+  --font2: "montserrat";
+}
+
+#hero {
+  min-height: -moz-min-content;
+  min-height: min-content;
+  color: white;
+  display: grid;
+  padding: 1rem;
+  position: relative;
+  background: rgb(0, 9, 20);
+  background: linear-gradient(180deg, rgb(0, 9, 20) 0%, rgb(0, 9, 20) 45%, rgb(0, 255, 242) 100%);
+  overflow: hidden;
+}
+#hero .anime .circles {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#hero .anime .circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 10s linear infinite;
+  bottom: -100px;
+}
+#hero .anime .circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+#hero .anime .circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+#hero .anime .circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+#hero .anime .circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+#hero .anime .circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+#hero .anime .circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+#hero .anime .circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+#hero .anime .circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+#hero .anime .circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+#hero .anime .circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+#hero .main #one, #hero .main #two {
+  display: none;
+}
+#hero .main .desc {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  font-size: medium;
+  font-family: var(--font2);
+  line-height: 1.3;
+}
+#hero .main .name {
+  display: flex;
+  font-size: 2.3rem;
+  font-family: var(--font1);
+}
+#hero .main .name #typed {
+  color: var(--Primary);
+}
+#hero .main .edesc p {
+  padding: 0.5rem;
+  line-height: 1.5;
+  max-width: 35ch;
+  font-family: var(--font2);
+}
+#hero .main .edesc p #typed {
+  font-size: larger;
+  font-family: var(--font1);
+  font-weight: bolder;
+  color: var(--Primary);
+}
+#hero .main .socials {
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+#hero .main .socials svg {
+  background-color: var(--Primary);
+  border-radius: 20px;
+  padding: 10px;
+  height: 50px;
+  aspect-ratio: 1/1;
+}
+#hero .main .socials svg:hover {
+  background-color: #37af9f;
+}
+#hero .main .btn {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+#hero .main .btn button {
+  background-color: var(--Primary);
+  border: none;
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  width: 350px;
+  font-family: var(--font1);
+  font-weight: 800;
+  font-size: large;
+  letter-spacing: 6px;
+}
+#hero .nav {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+#hero .nav .logde {
+  display: flex;
+  gap: 2rem;
+  font-family: var(--font2);
+  font-size: small;
+}
+#hero .nav .collogo img {
+  height: 100px;
+  width: 100px;
+}
+#hero .nav .elogo img {
+  height: 110px;
+  width: 130px;
+}
+#hero .spon {
+  padding: 0.5rem;
+  font-size: medium;
+  font-family: var(--font2);
+  line-height: 1.3;
+}
+#hero .spon .logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+#hero .spon .logos #uni {
+  height: 113px;
+  width: 328px;
+}
+#hero .spon .logos #g20 {
+  height: 150px;
+  width: 250px;
+}
+#hero .spon .logos #silver {
+  height: 200px;
+  width: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+  #hero {
+    padding: 3rem;
+    position: relative;
+  }
+  #hero .main {
+    position: relative;
+    z-index: 10;
+  }
+  #hero .main #one {
+    display: block;
+    position: absolute;
+    z-index: 9;
+    top: -90px;
+    right: 250px;
+  }
+  #hero .main #two {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: -40px;
+  }
+  #hero .main .edesc p {
+    max-width: 60ch;
+  }
+  #hero .spon .logos {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  #hero .anime .circles {
+    display: block;
+  }
+  #hero .main #one, #hero .main #two {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
