@@ -240,6 +240,12 @@
   font-family: var(--font2);
   font-size: small;
 }
+  #hero .nav {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
   #hero .main #two {
     display: block;
     position: absolute;
