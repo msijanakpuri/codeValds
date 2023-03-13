@@ -139,7 +139,7 @@
 #hero .main .edesc p {
   padding: 0.5rem;
   line-height: 1.5;
-  max-width: 30ch;
+  max-width: 33ch;
   font-family: var(--font2);
 }
 #hero .main .edesc p #typed {
@@ -173,7 +173,7 @@
   border: none;
   border-radius: 20px;
   padding: 1rem 1rem;
-  width: 350px;
+  width: 320px;
   font-family: var(--font1);
   font-weight: 800;
   font-size: large;
