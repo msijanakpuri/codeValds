@@ -180,7 +180,7 @@
   letter-spacing: 6px;
 }
 #hero .nav {
-  padding: 0.5rem;
+  padding: 0rem;
   display: flex;
   justify-content: space-evenly;
 }
