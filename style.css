@@ -184,12 +184,7 @@
   display: flex;
   justify-content: space-between;
 }
-#hero .nav .logde {
-  display: flex;
-  gap: 2rem;
-  font-family: var(--font2);
-  font-size: small;
-}
+
 #hero .nav .collogo img {
   height: 100px;
   width: 100px;
@@ -239,6 +234,12 @@
     top: -90px;
     right: 250px;
   }
+  #hero .nav .logde {
+  display: flex;
+  gap: 2rem;
+  font-family: var(--font2);
+  font-size: small;
+}
   #hero .main #two {
     display: block;
     position: absolute;
