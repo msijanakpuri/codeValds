@@ -6,12 +6,15 @@
     padding: 1rem;
     position: relative;
     background: rgb(0,9,20);
-    background: linear-gradient(180deg, rgba(0,9,20,1) 0%, rgba(0,9,20,1) 45%, rgba(0,255,242,1) 100%);
+    background: linear-gradient(180deg, rgba(0,9,20,1) 0%, rgba(0,9,20,1) 35%, rgba(0,255,242,1) 100%);
     overflow: hidden;
     .anime{
+        
         .circles{
+            pointer-events: none;
             height: 100%;
             position: absolute;
+            z-index: 0;
             top: 0;
             left: 0;
             width: 100%;
@@ -27,7 +30,7 @@
             height: 20px;
             background: rgba(255, 255, 255, 0.2 );
             animation: animate 10s linear infinite;
-            bottom: -100px;
+            bottom: -50px;
             
         }
         
@@ -141,7 +144,7 @@
         .name{
             // padding: .3rem;
             display: flex;
-            font-size: 2.3rem;
+            font-size: 2.1rem;
             font-family: var(--font1);
             #typed{
                 color: var(--Primary);
@@ -187,17 +190,9 @@
             margin-top: 2rem;
             padding:.5rem ;
             margin-bottom: 2rem;
-            button{
-                background-color: var(--Primary);
-                border: none;
-                border-radius: 20px;
-                padding: 1rem 1rem;
-                width: 350px;
-                font-family: var(--font1);
-                font-weight: 800;
-                font-size: large;
-                letter-spacing: 6px;
-            }
+            width: 320px;
+            background-color: blue;
+            
         }
         
     }
@@ -207,10 +202,8 @@
         display: flex;
         justify-content: space-between;
         .logde{
-            display: flex;
-            gap:2rem; 
             font-family: var(--font2); 
-            font-size: small;
+            font-size: x-small;
             }
             .collogo{
                 img{
@@ -226,11 +219,74 @@
             }
     }
 
+    .spongold{
+        padding: .5rem ;
+        font-size: x-large;
+        font-weight: 700;
+        text-align: center;
+        font-family: var(--font2);
+        line-height: 1.3;
+        .logos{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+            #dev{
+                z-index: 2;
+                background-color: white;
+                border-radius :20px;
+                height: 100px;
+                width: 100px;
+            }
+            #poly{
+                background-color: white;
+                border-radius :20px;
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+    .sponsilver{
+        padding: .5rem ;
+        margin-top: 1rem;
+        font-size: x-large;
+        font-weight: 700;
+        text-align: center;
+        font-family: var(--font2);
+        line-height: 1.3;
+        .logos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            #file{
+                background-color: white;
+                border-radius :20px;
+                height: 100px;
+                width: 100px;
+            }
+            #sol{
+                background-color: white;
+                border-radius :20px;
+                height: 100px;
+                width: 100px;
+            }
+            #rep{
+                background-color: white;
+                border-radius :20px;
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
 
     .spon{
         padding: .5rem ;
             font-size: medium;
-            // text-align: center;
+            font-size: x-large;
+            font-weight: 700;
+            text-align: center;
             font-family: var(--font2);
             line-height: 1.3;
         .logos{
@@ -252,5 +308,7 @@
             }
         }
     }
+
+
 }
 

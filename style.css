@@ -19,12 +19,14 @@
   padding: 1rem;
   position: relative;
   background: rgb(0, 9, 20);
-  background: linear-gradient(180deg, rgb(0, 9, 20) 0%, rgb(0, 9, 20) 45%, rgb(0, 255, 242) 100%);
+  background: linear-gradient(180deg, rgb(0, 9, 20) 0%, rgb(0, 9, 20) 35%, rgb(0, 255, 242) 100%);
   overflow: hidden;
 }
 #hero .anime .circles {
+  pointer-events: none;
   height: 100%;
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -39,7 +41,7 @@
   height: 20px;
   background: rgba(255, 255, 255, 0.2);
   animation: animate 10s linear infinite;
-  bottom: -100px;
+  bottom: -50px;
 }
 #hero .anime .circles li:nth-child(1) {
   left: 25%;
@@ -130,7 +132,7 @@
 }
 #hero .main .name {
   display: flex;
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-family: var(--font1);
 }
 #hero .main .name #typed {
@@ -139,7 +141,7 @@
 #hero .main .edesc p {
   padding: 0.5rem;
   line-height: 1.5;
-  max-width: 33ch;
+  max-width: 35ch;
   font-family: var(--font2);
 }
 #hero .main .edesc p #typed {
@@ -167,24 +169,18 @@
   margin-top: 2rem;
   padding: 0.5rem;
   margin-bottom: 2rem;
-}
-#hero .main .btn button {
-  background-color: var(--Primary);
-  border: none;
-  border-radius: 20px;
-  padding: 1rem 1rem;
   width: 320px;
-  font-family: var(--font1);
-  font-weight: 800;
-  font-size: large;
-  letter-spacing: 6px;
+  background-color: blue;
 }
 #hero .nav {
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
 }
-
+#hero .nav .logde {
+  font-family: var(--font2);
+  font-size: x-small;
+}
 #hero .nav .collogo img {
   height: 100px;
   width: 100px;
@@ -193,9 +189,73 @@
   height: 110px;
   width: 130px;
 }
+#hero .spongold {
+  padding: 0.5rem;
+  font-size: x-large;
+  font-weight: 700;
+  text-align: center;
+  font-family: var(--font2);
+  line-height: 1.3;
+}
+#hero .spongold .logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+#hero .spongold .logos #dev {
+  z-index: 2;
+  background-color: white;
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
+}
+#hero .spongold .logos #poly {
+  background-color: white;
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
+}
+#hero .sponsilver {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-size: x-large;
+  font-weight: 700;
+  text-align: center;
+  font-family: var(--font2);
+  line-height: 1.3;
+}
+#hero .sponsilver .logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+#hero .sponsilver .logos #file {
+  background-color: white;
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
+}
+#hero .sponsilver .logos #sol {
+  background-color: white;
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
+}
+#hero .sponsilver .logos #rep {
+  background-color: white;
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
+}
 #hero .spon {
   padding: 0.5rem;
   font-size: medium;
+  font-size: x-large;
+  font-weight: 700;
+  text-align: center;
   font-family: var(--font2);
   line-height: 1.3;
 }
@@ -217,16 +277,17 @@
   height: 200px;
   width: 200px;
 }
-#hero .nav .logde {
-  
-  font-family: var(--font2);
-  font-size: x-small;
-}
 
 @media only screen and (min-width: 768px) {
   #hero {
     padding: 3rem;
     position: relative;
+  }
+  #hero .logde {
+    display: flex;
+    gap: 2rem;
+    font-family: var(--font2);
+    font-size: small;
   }
   #hero .main {
     position: relative;
@@ -239,18 +300,6 @@
     top: -90px;
     right: 250px;
   }
-  #hero .nav .logde {
-  display: flex;
-  gap: 2rem;
-  font-family: var(--font2);
-  font-size: small;
-}
-  #hero .nav {
-  padding: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-}
-
   #hero .main #two {
     display: block;
     position: absolute;

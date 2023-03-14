@@ -2,7 +2,12 @@
     @media only screen and (min-width: 768px) {
             padding: 3rem;
             position: relative;
-
+            .logde{
+                display: flex;
+                gap:2rem; 
+                font-family: var(--font2); 
+                font-size: small;
+                }
             .main{
                 position: relative;
                 z-index: 10;
