@@ -39,8 +39,3 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
-
-const insta= document.querySelector('#insta');
-insta.addEventListener('click',function () {
-    window.location.replace("https://www.instagram.com/codevalds");
-})
