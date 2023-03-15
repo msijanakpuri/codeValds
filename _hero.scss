@@ -191,7 +191,9 @@
             padding:.5rem ;
             margin-bottom: 2rem;
             width: 320px;
-            background-color: blue;
+            .apply-button{
+                background-color: var(--Primary);
+            }
             
         }
         
