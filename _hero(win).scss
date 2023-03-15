@@ -2,11 +2,18 @@
     @media only screen and (min-width: 768px) {
             padding: 3rem;
             position: relative;
-            .logde{
+            .lodge{
+                width: 65%;
+                justify-content: space-between;
                 display: flex;
-                gap:2rem; 
+            }
+            .achie{
+                text-align:center;
                 font-family: var(--font2); 
                 font-size: small;
+                h2{
+                    font-size: large;
+                }
                 }
             .main{
                 position: relative;
@@ -15,7 +22,7 @@
                     display: block;
                     position: absolute;
                     z-index: 9;
-                    top: -90px;
+                    top: -60px;
                     right: 250px;
 
                 }

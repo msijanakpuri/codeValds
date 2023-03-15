@@ -177,9 +177,13 @@
   display: flex;
   justify-content: space-between;
 }
-#hero .nav .logde {
+#hero .nav .achie {
+  margin-top: 1rem;
   font-family: var(--font2);
-  font-size: x-small;
+  font-size: small;
+}
+#hero .nav .achie h2 {
+  font-size: large;
 }
 #hero .nav .collogo img {
   height: 100px;
@@ -283,11 +287,18 @@
     padding: 3rem;
     position: relative;
   }
-  #hero .logde {
+  #hero .lodge {
+    width: 65%;
+    justify-content: space-between;
     display: flex;
-    gap: 2rem;
+  }
+  #hero .achie {
+    text-align: center;
     font-family: var(--font2);
     font-size: small;
+  }
+  #hero .achie h2 {
+    font-size: large;
   }
   #hero .main {
     position: relative;
@@ -297,7 +308,7 @@
     display: block;
     position: absolute;
     z-index: 9;
-    top: -90px;
+    top: -60px;
     right: 250px;
   }
   #hero .main #two {

@@ -201,9 +201,13 @@
         padding: .5rem ;
         display: flex;
         justify-content: space-between;
-        .logde{
+        .achie{
+            margin-top:1rem; 
             font-family: var(--font2); 
-            font-size: x-small;
+            font-size: small;
+            h2{
+                font-size: large;
+            }
             }
             .collogo{
                 img{
