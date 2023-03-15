@@ -171,9 +171,6 @@
   margin-bottom: 2rem;
   width: 320px;
 }
-#hero .main .btn .apply-button {
-  background-color: var(--Primary);
-}
 #hero .nav {
   padding: 0.5rem;
   display: flex;
