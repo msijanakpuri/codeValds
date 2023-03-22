@@ -39,3 +39,7 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+// Nearly there - I wonder how to read this - et tu brute!!!
+// whzzdvyk : jvklchskzYvjrz
+// oaawz://zhcl-tf-alea.clyjls.hww/jvklchskz_lnn/
